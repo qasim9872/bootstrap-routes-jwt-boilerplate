@@ -19,6 +19,8 @@ const router = require('./router/router');
 require('./config/passport');
 require('./config/mongoose');
 
+require('./config/api-docs/swagger-setup')(app);
+
 // =======================
 // configuration =========
 // =======================
