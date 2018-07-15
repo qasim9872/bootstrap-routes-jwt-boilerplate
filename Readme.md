@@ -17,3 +17,4 @@
 - run the below command in the root directory:
 - docker-compose up
 
+## To view the api docs - go to http://localhost:3000/api-docs/#/
