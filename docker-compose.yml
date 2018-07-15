@@ -6,7 +6,6 @@ services:
      - "27017:27017"
   back-end:
     image: backend
-    container: backend-container
     build: .
     ports:
      - "3000:3000"

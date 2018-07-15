@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server"
   },
   "author": "Muhammad Qasim & Ghada Kashif",
   "license": "ISC",
