@@ -11,7 +11,8 @@ services:
     ports:
      - "3000:3000"
     environment:
-     - secret=S3cR3t
+    # pass secrets through the .env file
+     - secret=${secret}
      - DB_HOST=mongo
     links:
      - mongo 
