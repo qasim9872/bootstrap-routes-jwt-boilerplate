@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:3.6
+    ports:
+     - "27017:27017"
+  back-end:
+    image: backend
+    container: backend-container
+    build: .
+    ports:
+     - "3000:3000"
+    environment:
+     - secret=S3cR3t
+     - DB_HOST=mongo
+    links:
+     - mongo 
+    depends_on: 
+     - mongo 
+     
